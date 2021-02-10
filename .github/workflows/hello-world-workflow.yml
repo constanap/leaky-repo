@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: hello-world-workflow
 on: [push]
 jobs:
   check-bats-version:
