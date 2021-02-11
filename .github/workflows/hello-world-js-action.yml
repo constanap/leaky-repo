@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: constanap/hello-world-js-action
+      uses: constanap/hello-world-js-action@03311f11ba52ccbc9a487b23a91ed7b7702dd5e5
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
