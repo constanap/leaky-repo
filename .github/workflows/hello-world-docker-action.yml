@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Job que utiliza una acción Docker
     steps:
+    - name: checkout
+      uses: actions/checkout@v2
     - name: Llamada a la acción Docker
       id: hello # id del step, referenciado en el siguiente a la hora de mostrar el parámetro de salida
       uses: ./.github/actions/hello-world-docker-action # https://github.com/constanap/leaky-repo/tree/main/.github/actions/hello-world-docker-action
