@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: constanap/hello-world-composite-action@271d77d95fe882209a47938313f3d1aadec570eb
+      uses: constanap/hello-world-compisite-action@271d77d95fe882209a47938313f3d1aadec570eb
       with:
         who-to-greet: 'Composite'
     - run: echo random-number ${{ steps.foo.outputs.random-number }} # Salida
