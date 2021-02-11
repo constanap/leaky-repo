@@ -12,4 +12,4 @@ jobs:
         who-to-greet: 'Constan' # Parámetro de entrada a la acción
     # Use the output from the `hello` step
     - name: Dibujar el parámetro de salida
-      run: echo "The time was ${{ steps.hello.outputs.time }}" # parámetro de salida del step anterior {{hello}} coincide con el id
+      run: echo "Son las ${{ steps.hello.outputs.time }}" # parámetro de salida del step anterior {{hello}} coincide con el id
