@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Llamada a la acción Docker
       id: hello # id del step, referenciado en el siguiente a la hora de mostrar el parámetro de salida
-      uses: ./ # https://github.com/constanap/hello-world-docker-action
+      uses: ./.github/actions/hello-world-docker-action # https://github.com/constanap/leaky-repo/tree/main/.github/actions/hello-world-docker-action
       with:
         who-to-greet: 'Constan' # Parámetro de entrada a la acción
     # Use the output from the `hello` step
