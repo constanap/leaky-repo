@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Job que utiliza una acción Docker
+    steps:
+    - name: Llamada a la acción Docker
+      id: hello # id del step, referenciado en el siguiente a la hora de mostrar el parámetro de salida
+      uses: actions/hello-world-docker-action@v1
+      with:
+        who-to-greet: 'Constan' # Parámetro de entrada a la acción
+    # Use the output from the `hello` step
+    - name: Dibujar el parámetro de salida
+      run: echo "The time was ${{ steps.hello.outputs.time }}" # parámetro de salida del step anterior {{hello}} coincide con el id
