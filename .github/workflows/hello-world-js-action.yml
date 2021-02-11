@@ -7,9 +7,9 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: constanap/hello-world-js-action@a0e02f8435fedb37d4d58a970066b076db8561cd
+      uses: constanap/hello-world-js-action@12978aae0341a6c214338aed495e7b24c7be8b6d
       with:
-        who-to-greet: 'Mona the Octocat'
+        who-to-greet: 'Roi'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
