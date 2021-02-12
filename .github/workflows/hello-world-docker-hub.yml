@@ -3,7 +3,7 @@ name: hello-world-docker-hub
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: Job que utiliza una acción Docker
+    name: Job que utiliza una acción Docker del Docker Hub
     steps:
     - name: checkout
       uses: actions/checkout@v2
