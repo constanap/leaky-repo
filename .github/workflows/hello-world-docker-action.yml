@@ -11,7 +11,7 @@ jobs:
       id: hello # id del step, referenciado en el siguiente a la hora de mostrar el parámetro de salida
       uses: constanap/hello-world-docker-action@cdfdd1f46aac5e3d62aecfa4fb84e95f7977565f # https://github.com/constanap/leaky-repo/tree/main/.github/actions/hello-world-docker-action
       with:
-        who-to-greet: 'Constan' # Parámetro de entrada a la acción
+        who-to-greet: 'Constantino' # Parámetro de entrada a la acción
     # Use the output from the `hello` step
     - name: Dibujar el parámetro de salida
       run: echo "Son las ${{ steps.hello.outputs.time }}" # parámetro de salida del step anterior {{hello}} coincide con el id
